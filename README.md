@@ -3,5 +3,5 @@ This will be the repository that I use to design the web page for my Porfolio, w
 
 
 # TODOS
-1. ARREGLAR VIDEO
 2. EMPEZAR A EDITAR EL BLOG DE QUÉ APRENDÍ EN CADA CLASE
+    PRIMERO HECHO
