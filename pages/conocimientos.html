@@ -40,43 +40,118 @@
           </p>
         </section>
 
+        <section class="doc">
+          <h2>Stack tecnológico</h2>
+          <ul>
+            <li><strong>Lenguajes:</strong> Python, C++, C, Java, HTML/CSS/JS.</li>
+            <li><strong>Visión Artificial e IA:</strong> OpenCV, YOLO, PyTorch, TensorRT, Scikit-learn.</li>
+            <li><strong>Simulación y gráficos 3D:</strong> Blender, Unity, OpenGL.</li>
+            <li><strong>Herramientas:</strong> Linux, Git (GitLab, GitFlow), CMake / Make, Docker, Proxmox.</li>
+          </ul>
+        </section>
+
         <section class="accordion" aria-label="Cursos">
           <details open>
-            <summary>&gt; Cuarto curso · materias actuales</summary>
+            <summary>&gt; Máster en Visión por Computador (IMCV) · en curso</summary>
             <div class="accordion__body">
               <article class="module">
-                <h3>Diseño de los Lenguajes de Programación</h3>
+                <h3>Fundamentals of Image Processing and Analysis</h3>
                 <p>
-                  Profundizando en gramáticas, parsers y pequeños intérpretes. Aquí iré anotando los
-                  experimentos con DSLs y compiladores caseros.
+                  Asignatura de nivelación para quienes venimos de distintos grados. Repasamos fundamentos de
+                  imagen digital, percepción del color, mejora y restauración de imágenes, transformaciones
+                  geométricas, detectores de bordes y template matching. En las prácticas implementé, por
+                  ejemplo, el etiquetado de componentes conexas desde cero con NumPy.
                 </p>
               </article>
               <article class="module">
-                <h3>Computación Gráfica y Visualización</h3>
+                <h3>Image Description and Modeling</h3>
                 <p>
-                  Proyecto centrado en pipelines gráficos y shaders. Añadiré capturas de los renders
-                  y notas sobre optimización en GPU.
+                  Cómo describir el contenido visual de una imagen: transformadas, bancos de filtros y modelado
+                  visual para reconocimiento. Combina notebooks prácticos con OpenCV y un proyecto de
+                  investigación con métricas que hay que defender.
                 </p>
               </article>
               <article class="module">
-                <h3>Procesamiento de Lenguajes</h3>
+                <h3>Instrumentation and Processing for Biomedical Applications</h3>
                 <p>
-                  Tratamiento de texto, modelos lingüísticos y detección de entidades. Reservo este
-                  bloque para scripts NLP y resultados de laboratorio.
+                  Cómo se adquieren las imágenes médicas (producción de rayos X) y cómo se mide su calidad.
+                  Las prácticas son notebooks en Python con NumPy, Pillow y Matplotlib.
                 </p>
               </article>
               <article class="module">
-                <h3>Visión Artificial</h3>
+                <h3>Fundamentals of Machine Learning for Computer Vision</h3>
                 <p>
-                  Desde filtros clásicos hasta CNNs ligeras para reconocimiento. Documentaré datasets
-                  usados y métricas obtenidas.
+                  Teoría del aprendizaje y probabilidad como base formal del Machine Learning: tipos de problemas,
+                  familias de modelos y generalización. Termina con un proyecto de ML de tema libre.
                 </p>
               </article>
             </div>
           </details>
 
           <details>
-            <summary>&gt; Tercer curso · materias obligatorias</summary>
+            <summary>&gt; Cuarto curso · mención en Computación</summary>
+            <div class="accordion__body">
+              <article class="module">
+                <h3>Visión Artificial</h3>
+                <p>
+                  La asignatura que me confirmó qué quería hacer. En la primera práctica implementé desde cero en
+                  Python funciones de procesado: ajuste y ecualización de histograma, filtros gaussiano y de mediana,
+                  operadores morfológicos, hit-or-miss y detectores de bordes (gradiente, LoG y Canny). En la segunda
+                  segmenté imágenes con umbralización adaptativa por regiones y evalué el resultado píxel a píxel
+                  contra el ground truth. Aprendí que documentar por qué se toma cada decisión (y qué falló)
+                  importa más que el mejor resultado.
+                </p>
+              </article>
+              <article class="module">
+                <h3>Computación Gráfica y Visualización</h3>
+                <p>
+                  Dos mitades: OpenGL en C para entender el pipeline gráfico (primitivas, transformaciones, recorte,
+                  superficies visibles, iluminación y sombreado) y Blender para modelado y animación. El proyecto
+                  final de Blender fue la animación del pingüino que tengo en
+                  <a class="menu__link" href="proyectos.html">[Proyectos]</a>.
+                </p>
+              </article>
+              <article class="module">
+                <h3>Procesamiento de Lenguajes</h3>
+                <p>
+                  Cómo funciona un compilador por dentro: análisis léxico, sintáctico (LL, LR y precedencia),
+                  semántico y optimización de código. En prácticas construí un validador de XML con Flex y Bison.
+                </p>
+              </article>
+              <article class="module">
+                <h3>Diseño de los Lenguajes de Programación</h3>
+                <p>
+                  Sistemas de tipos y lenguajes orientados a objetos desde un punto de vista formal. En la práctica
+                  ampliamos en OCaml un intérprete de lambda-cálculo, añadiéndole nuevas construcciones como la
+                  recursividad.
+                </p>
+              </article>
+              <article class="module">
+                <h3>Entornos Inmersivos, Interactivos y de Entretenimiento</h3>
+                <p>
+                  Programación de videojuegos: motores 3D, patrones de diseño e IA en juegos. Lo apliqué en dos
+                  juegos en equipo, uno en Pygame y otro en Unity (ver <a class="menu__link" href="proyectos.html">[Proyectos]</a>).
+                </p>
+              </article>
+              <article class="module">
+                <h3>Prácticas en Empresa</h3>
+                <p>
+                  Prácticas curriculares en el departamento de Visión Artificial del ITG (ver
+                  <a class="menu__link" href="experiencia.html">[Experiencia]</a>).
+                </p>
+              </article>
+              <article class="module">
+                <h3>Trabajo Fin de Grado</h3>
+                <p>
+                  Pipeline de Deep Learning con YOLO y CORAL-CNN para evaluar el pastoreo en algas, publicado en
+                  XoveTIC 2026 (ver <a class="menu__link" href="proyectos.html">[Proyectos]</a>).
+                </p>
+              </article>
+            </div>
+          </details>
+
+          <details>
+            <summary>&gt; Tercer curso</summary>
             <div class="accordion__body">
               <article class="module">
                 <h3>Representación del Conocimiento y Razonamiento Automático</h3>
@@ -144,8 +219,8 @@
               <article class="module">
                 <h3>Gestión de Infraestructuras</h3>
                 <p>
-                  Nos centramos en operaciones, despliegues y monitorización. Vimos como gestionar servidores
-                  y servicios en de forma eficiente.
+                  Nos centramos en operaciones, despliegues y monitorización. Vimos cómo gestionar servidores
+                  y servicios de forma eficiente.
                 </p>
               </article>
             </div>
@@ -170,14 +245,14 @@
               <article class="module">
                 <h3>Paradigmas de Programación</h3>
                 <p>
-                  Usamos OCaml para explorar programación funcional y lógica. Fué básico para 
+                  Usamos OCaml para explorar programación funcional y lógica. Fue básico para 
                   entender diferentes enfoques de resolución de problemas.
                 </p>
               </article>
               <article class="module">
                 <h3>Diseño Software</h3>
                 <p>
-                  Patrones, arquitectura y trabajo colaborativo. Fué la primera vez que usamos 
+                  Patrones, arquitectura y trabajo colaborativo. Fue la primera vez que usamos 
                   Java y programación orientada a objetos en profundidad.
                 </p>
               </article>
@@ -204,8 +279,8 @@
               <article class="module">
                 <h3>Concurrencia y Paralelismo</h3>
                 <p>
-                  Vimos hilos, procesos y problemas clásico (Filósofos, Productores-Consumidores...). Aplicamos
-                  lo conocido en C y Eerlang.
+                  Vimos hilos, procesos y problemas clásicos (Filósofos, Productores-Consumidores...). Aplicamos
+                  lo conocido en C y Erlang.
                 </p>
               </article>
               <article class="module">
@@ -230,13 +305,13 @@
               <article class="module">
                 <h3>Programación I</h3>
                 <p>
-                  Introducción a C y resolución de problemas básicos. Fué mi primer contacto con un lenguaje de programación.
+                  Introducción a C y resolución de problemas básicos. Fue mi primer contacto con un lenguaje de programación.
                 </p>
               </article>
               <article class="module">
                 <h3>Informática Básica</h3>
                 <p>
-                  Aprendí sobre el ecosistema de Linux, comandos y la navegación báscica por terminal. También
+                  Aprendí sobre el ecosistema de Linux, comandos y la navegación básica por terminal. También
                   interioricé mejor conceptos básicos como binario y permisos.
                 </p>
               </article>
@@ -290,7 +365,7 @@
               <article class="module">
                 <h3>Álgebra</h3>
                 <p>
-                  Profundicé en temas de álgebra lineal como matrices, determinantes y sistemas de ecuaciones. Esto fué 
+                  Profundicé en temas de álgebra lineal como matrices, determinantes y sistemas de ecuaciones. Esto fue 
                   básico para entender conceptos futuros en áreas como gráficos por computador y aprendizaje automático.
                 </p>
               </article>
