@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Conocimientos</title>
+    <title>Portfolio | Knowledge</title>
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="alternate" hreflang="en" href="https://estev-o.github.io/Portfolio/pages/conocimientos.html" />
+    <link rel="alternate" hreflang="es" href="https://estev-o.github.io/Portfolio/es/pages/conocimientos.html" />
+    <link rel="alternate" hreflang="x-default" href="https://estev-o.github.io/Portfolio/pages/conocimientos.html" />
   </head>
   <body class="retro retro--page">
+    <nav class="lang-switch" aria-label="Language">
+      <span class="lang-switch__prompt" aria-hidden="true">lang&gt;</span>
+      <a class="lang-switch__opt lang-switch__opt--active" href="conocimientos.html" hreflang="en" lang="en" aria-current="page" title="English">EN</a>
+      <a class="lang-switch__opt" href="../es/pages/conocimientos.html" hreflang="es" lang="es" title="Español">ES</a>
+    </nav>
     <div class="page">
       <header class="page-head">
         <div class="topbar">
-          <a class="logo-button" href="../index.html" aria-label="Volver al inicio">
-<pre class="logo logo--small" aria-label="ASCII personalizado">
+          <a class="logo-button" href="../index.html" aria-label="Back to home">
+<pre class="logo logo--small" aria-label="Custom ASCII">
    ___  _____ ______    ___ __ __   ___  
   /  _]/ ___/|      |  /  _]  |  | /   \ 
  /  [_(   \_ |      | /  [_|  |  ||     |
@@ -22,351 +30,349 @@
 |_____| \___|  |__|  |_____| \_/   \___/ 
           </pre>
           </a>
-          <nav class="menu menu--stack" aria-label="Navegación principal">
-            <a class="menu__link" href="sobre-mi.html">[Sobre mi]</a>
-            <a class="menu__link" href="experiencia.html">[Experiencia]</a>
-            <a class="menu__link" href="proyectos.html">[Proyectos]</a>
-            <a class="menu__link menu__link--active" href="conocimientos.html">[Conocimientos]</a>
+          <nav class="menu menu--stack" aria-label="Main navigation">
+            <a class="menu__link" href="sobre-mi.html">[About me]</a>
+            <a class="menu__link" href="experiencia.html">[Experience]</a>
+            <a class="menu__link" href="proyectos.html">[Projects]</a>
+            <a class="menu__link menu__link--active" href="conocimientos.html">[Knowledge]</a>
           </nav>
         </div>
       </header>
 
       <div class="page-body">
         <section class="doc">
-          <h1>Conocimientos</h1>
+          <h1>Knowledge</h1>
           <p>
-            Un registro donde hago una retrospectiva y agrupo lo aprendido en cada materia. Cada bloque es
-            desplegable, dentro veréis un comentario estilo blog de lo que aprendí en cada materia.
+            A log where I look back and group what I learned in each course. Every block can be
+            expanded, and inside you'll find a blog-style comment on what each subject taught me.
           </p>
         </section>
 
         <section class="doc">
-          <h2>Stack tecnológico</h2>
+          <h2>Tech stack</h2>
           <ul>
-            <li><strong>Lenguajes:</strong> Python, C++, C, Java, HTML/CSS/JS.</li>
-            <li><strong>Visión Artificial e IA:</strong> OpenCV, YOLO, PyTorch, TensorRT, Scikit-learn.</li>
-            <li><strong>Simulación y gráficos 3D:</strong> Blender, Unity, OpenGL.</li>
-            <li><strong>Herramientas:</strong> Linux, Git (GitLab, GitFlow), CMake / Make, Docker, Proxmox.</li>
+            <li><strong>Languages:</strong> Python, C++, C, Java, HTML/CSS/JS.</li>
+            <li><strong>Computer Vision &amp; AI:</strong> OpenCV, YOLO, PyTorch, TensorRT, Scikit-learn.</li>
+            <li><strong>Simulation &amp; 3D graphics:</strong> Blender, Unity, OpenGL.</li>
+            <li><strong>Tools:</strong> Linux, Git (GitLab, GitFlow), CMake / Make, Docker, Proxmox.</li>
           </ul>
         </section>
 
-        <section class="accordion" aria-label="Cursos">
+        <section class="accordion" aria-label="Courses">
           <details open>
-            <summary>&gt; Máster en Visión por Computador (IMCV) · en curso</summary>
+            <summary>&gt; International Master in Computer Vision (IMCV) · in progress</summary>
             <div class="accordion__body">
               <article class="module">
                 <h3>Fundamentals of Image Processing and Analysis</h3>
                 <p>
-                  Asignatura de nivelación para quienes venimos de distintos grados. Repasamos fundamentos de
-                  imagen digital, percepción del color, mejora y restauración de imágenes, transformaciones
-                  geométricas, detectores de bordes y template matching. En las prácticas implementé, por
-                  ejemplo, el etiquetado de componentes conexas desde cero con NumPy.
+                  A levelling course for students coming from different backgrounds. We cover digital image
+                  fundamentals, colour perception, image enhancement and restoration, geometric transformations,
+                  edge detectors and template matching. In the labs I implemented, for example, connected-component
+                  labelling from scratch with NumPy.
                 </p>
               </article>
               <article class="module">
                 <h3>Image Description and Modeling</h3>
                 <p>
-                  Cómo describir el contenido visual de una imagen: transformadas, bancos de filtros y modelado
-                  visual para reconocimiento. Combina notebooks prácticos con OpenCV y un proyecto de
-                  investigación con métricas que hay que defender.
+                  How to describe the visual content of an image: transforms, filter banks and visual modelling
+                  for recognition. It combines hands-on notebooks with OpenCV and a research project with metrics
+                  that has to be defended.
                 </p>
               </article>
               <article class="module">
                 <h3>Instrumentation and Processing for Biomedical Applications</h3>
                 <p>
-                  Cómo se adquieren las imágenes médicas (producción de rayos X) y cómo se mide su calidad.
-                  Las prácticas son notebooks en Python con NumPy, Pillow y Matplotlib.
+                  How medical images are acquired (X-ray production) and how their quality is measured.
+                  The labs are Python notebooks with NumPy, Pillow and Matplotlib.
                 </p>
               </article>
               <article class="module">
                 <h3>Fundamentals of Machine Learning for Computer Vision</h3>
                 <p>
-                  Teoría del aprendizaje y probabilidad como base formal del Machine Learning: tipos de problemas,
-                  familias de modelos y generalización. Termina con un proyecto de ML de tema libre.
+                  Learning theory and probability as the formal basis of Machine Learning: problem types,
+                  model families and generalization. It ends with a free-topic ML project.
                 </p>
               </article>
             </div>
           </details>
 
           <details>
-            <summary>&gt; Cuarto curso · mención en Computación</summary>
+            <summary>&gt; Fourth year · Computing specialization</summary>
             <div class="accordion__body">
               <article class="module">
-                <h3>Visión Artificial</h3>
+                <h3>Computer Vision</h3>
                 <p>
-                  La asignatura que me confirmó qué quería hacer. En la primera práctica implementé desde cero en
-                  Python funciones de procesado: ajuste y ecualización de histograma, filtros gaussiano y de mediana,
-                  operadores morfológicos, hit-or-miss y detectores de bordes (gradiente, LoG y Canny). En la segunda
-                  segmenté imágenes con umbralización adaptativa por regiones y evalué el resultado píxel a píxel
-                  contra el ground truth. Aprendí que documentar por qué se toma cada decisión (y qué falló)
-                  importa más que el mejor resultado.
+                  The course that confirmed what I wanted to do. In the first assignment I implemented processing
+                  functions from scratch in Python: histogram adjustment and equalization, Gaussian and median filters,
+                  morphological operators, hit-or-miss and edge detectors (gradient, LoG and Canny). In the second I
+                  segmented images with region-based adaptive thresholding and evaluated the result pixel by pixel
+                  against the ground truth. I learned that documenting why each decision is made (and what failed)
+                  matters more than getting the best result.
                 </p>
               </article>
               <article class="module">
-                <h3>Computación Gráfica y Visualización</h3>
+                <h3>Computer Graphics and Visualization</h3>
                 <p>
-                  Dos mitades: OpenGL en C para entender el pipeline gráfico (primitivas, transformaciones, recorte,
-                  superficies visibles, iluminación y sombreado) y Blender para modelado y animación. El proyecto
-                  final de Blender fue la animación del pingüino que tengo en
-                  <a class="menu__link" href="proyectos.html">[Proyectos]</a>.
+                  Two halves: OpenGL in C to understand the graphics pipeline (primitives, transformations, clipping,
+                  visible surfaces, lighting and shading) and Blender for modelling and animation. The final Blender
+                  project was the penguin animation you can find in
+                  <a class="menu__link" href="proyectos.html">[Projects]</a>.
                 </p>
               </article>
               <article class="module">
-                <h3>Procesamiento de Lenguajes</h3>
+                <h3>Language Processing</h3>
                 <p>
-                  Cómo funciona un compilador por dentro: análisis léxico, sintáctico (LL, LR y precedencia),
-                  semántico y optimización de código. En prácticas construí un validador de XML con Flex y Bison.
+                  How a compiler works on the inside: lexical analysis, parsing (LL, LR and precedence), semantic
+                  analysis and code optimization. In the labs I built an XML validator with Flex and Bison.
                 </p>
               </article>
               <article class="module">
-                <h3>Diseño de los Lenguajes de Programación</h3>
+                <h3>Programming Language Design</h3>
                 <p>
-                  Sistemas de tipos y lenguajes orientados a objetos desde un punto de vista formal. En la práctica
-                  ampliamos en OCaml un intérprete de lambda-cálculo, añadiéndole nuevas construcciones como la
-                  recursividad.
+                  Type systems and object-oriented languages from a formal point of view. In the assignment we
+                  extended a lambda-calculus interpreter in OCaml, adding new constructs such as recursion.
                 </p>
               </article>
               <article class="module">
-                <h3>Entornos Inmersivos, Interactivos y de Entretenimiento</h3>
+                <h3>Immersive, Interactive and Entertainment Environments</h3>
                 <p>
-                  Programación de videojuegos: motores 3D, patrones de diseño e IA en juegos. Lo apliqué en dos
-                  juegos en equipo, uno en Pygame y otro en Unity (ver <a class="menu__link" href="proyectos.html">[Proyectos]</a>).
+                  Video game programming: 3D engines, design patterns and game AI. I applied it in two team
+                  games, one in Pygame and one in Unity (see <a class="menu__link" href="proyectos.html">[Projects]</a>).
                 </p>
               </article>
               <article class="module">
-                <h3>Prácticas en Empresa</h3>
+                <h3>Internship</h3>
                 <p>
-                  Prácticas curriculares en el departamento de Visión Artificial del ITG (ver
-                  <a class="menu__link" href="experiencia.html">[Experiencia]</a>).
+                  Curricular internship in the Computer Vision department at ITG (see
+                  <a class="menu__link" href="experiencia.html">[Experience]</a>).
                 </p>
               </article>
               <article class="module">
-                <h3>Trabajo Fin de Grado</h3>
+                <h3>Bachelor's Thesis</h3>
                 <p>
-                  Pipeline de Deep Learning con YOLO y CORAL-CNN para evaluar el pastoreo en algas, publicado en
-                  XoveTIC 2026 (ver <a class="menu__link" href="proyectos.html">[Proyectos]</a>).
+                  Deep Learning pipeline with YOLO and CORAL-CNN to assess grazing in kelp, published at
+                  XoveTIC 2026 (see <a class="menu__link" href="proyectos.html">[Projects]</a>).
                 </p>
               </article>
             </div>
           </details>
 
           <details>
-            <summary>&gt; Tercer curso</summary>
+            <summary>&gt; Third year</summary>
             <div class="accordion__body">
               <article class="module">
-                <h3>Representación del Conocimiento y Razonamiento Automático</h3>
+                <h3>Knowledge Representation and Automated Reasoning</h3>
                 <p>
-                  Aterrizamos la parte lógica con ontologías ligeras y motores de inferencia. Me sirvió
-                  para describir dominios reales y automatizar conclusiones sin escribir más reglas de la cuenta.
+                  We brought logic down to earth with lightweight ontologies and inference engines. It helped me
+                  describe real domains and automate conclusions without writing more rules than needed.
                 </p>
               </article>
               <article class="module">
-                <h3>Desarrollo de Sistemas Inteligentes</h3>
+                <h3>Intelligent Systems Development</h3>
                 <p>
-                  Construimos agentes y pequeños sistemas expertos. Fue donde más practiqué cómo dividir
-                  la lógica de decisión y justificar por qué un agente actúa de cierta manera.
+                  We built agents and small expert systems. This is where I practised the most how to split
+                  decision logic and justify why an agent acts in a certain way.
                 </p>
               </article>
               <article class="module">
-                <h3>Aprendizaje Automático</h3>
+                <h3>Machine Learning</h3>
                 <p>
-                  Armé pipelines de ML con Python y un poco de Julia. Me quedé sobre todo con la parte de
-                  limpieza de datos y cómo documentar experimentos para no perderme entre notebooks.
+                  I built ML pipelines with Python and some Julia. What stuck with me most was data cleaning and
+                  how to document experiments so I wouldn't get lost among notebooks.
                 </p>
               </article>
               <article class="module">
-                <h3>Teoría de la Computación</h3>
+                <h3>Theory of Computation</h3>
                 <p>
-                  Volvimos a autómatas, lenguajes formales y complejidad. Dejé anotadas las demostraciones
-                  que más repetimos para poder reutilizarlas cuando diseño lenguajes o parsers.
+                  Back to automata, formal languages and complexity. I kept notes on the proofs we repeated the
+                  most so I can reuse them when designing languages or parsers.
                 </p>
               </article>
               <article class="module">
-                <h3>Recuperación de Información</h3>
+                <h3>Information Retrieval</h3>
                 <p>
-                  Montamos motores de búsqueda sencillos y aprendí a evaluar ranking con métricas claras.
-                  Tengo aquí los benchmarks que hice comparando BM25 con variantes más modernas.
+                  We built simple search engines and I learned to evaluate rankings with clear metrics. I keep
+                  here the benchmarks I ran comparing BM25 with more modern variants.
                 </p>
               </article>
               <article class="module">
-                <h3>Gestión de Proyectos</h3>
+                <h3>Project Management</h3>
                 <p>
-                  Practiqué planificación, estimaciones y reparto de roles. Apunté qué dinámicas nos
-                  ayudaron a llegar a tiempo y qué herramientas realmente usamos en equipo.
+                  I practised planning, estimation and role assignment. I noted which dynamics helped us meet
+                  deadlines and which tools we actually used as a team.
                 </p>
               </article>
               <article class="module">
-                <h3>Interfaces Persona Máquina</h3>
+                <h3>Human-Computer Interaction</h3>
                 <p>
-                  Hicimos investigación con usuarios reales, prototipos rápidos y pruebas de UX. Las conclusiones
-                  las aplico cada vez que maqueto algo para que se entienda sin manual.
+                  We did research with real users, rapid prototyping and UX testing. I apply the conclusions every
+                  time I lay something out so it can be understood without a manual.
                 </p>
               </article>
               <article class="module">
-                <h3>Internet y Sistemas Distribuidos</h3>
+                <h3>Internet and Distributed Systems</h3>
                 <p>
-                  Repasé arquitecturas distribuidas, tolerancia a fallos y patrones de escalado. Aquí guardo
-                  los diagramas que uso de base cuando pienso en despliegues repartidos.
+                  I reviewed distributed architectures, fault tolerance and scaling patterns. I keep the diagrams
+                  I use as a starting point when thinking about distributed deployments.
                 </p>
               </article>
               <article class="module">
-                <h3>Legislación y Seguridad Informática</h3>
+                <h3>Legislation and Computer Security</h3>
                 <p>
-                  Vimos el marco legal y protección de datos. También aprendí buenas prácticas de seguridad
-                  en Linux.
+                  We covered the legal framework and data protection. I also learned good security practices
+                  on Linux.
                 </p>
               </article>
               <article class="module">
-                <h3>Gestión de Infraestructuras</h3>
+                <h3>Infrastructure Management</h3>
                 <p>
-                  Nos centramos en operaciones, despliegues y monitorización. Vimos cómo gestionar servidores
-                  y servicios de forma eficiente.
+                  We focused on operations, deployments and monitoring. We saw how to manage servers and
+                  services efficiently.
                 </p>
               </article>
             </div>
           </details>
 
           <details>
-            <summary>&gt; Segundo curso · troncales</summary>
+            <summary>&gt; Second year</summary>
             <div class="accordion__body">
               <article class="module">
-                <h3>Algoritmos</h3>
+                <h3>Algorithms</h3>
                 <p>
-                  Consolidando análisis de complejidad y técnicas de optimización. Vimos diversos
-                  algoritmos clásicos y sus implementaciones.
+                  Consolidating complexity analysis and optimization techniques. We studied several classic
+                  algorithms and their implementations.
                 </p>
               </article>
               <article class="module">
-                <h3>Estructura de Computadores</h3>
+                <h3>Computer Structure</h3>
                 <p>
-                  Funcionamiento interno del hardware y pipeline de instrucciones.
+                  How hardware works internally and the instruction pipeline.
                 </p>
               </article>
               <article class="module">
-                <h3>Paradigmas de Programación</h3>
+                <h3>Programming Paradigms</h3>
                 <p>
-                  Usamos OCaml para explorar programación funcional y lógica. Fue básico para 
-                  entender diferentes enfoques de resolución de problemas.
+                  We used OCaml to explore functional and logic programming. It was key to understanding
+                  different approaches to problem solving.
                 </p>
               </article>
               <article class="module">
-                <h3>Diseño Software</h3>
+                <h3>Software Design</h3>
                 <p>
-                  Patrones, arquitectura y trabajo colaborativo. Fue la primera vez que usamos 
-                  Java y programación orientada a objetos en profundidad.
+                  Patterns, architecture and collaborative work. It was the first time we used Java and
+                  object-oriented programming in depth.
                 </p>
               </article>
               <article class="module">
-                <h3>Sistemas Operativos</h3>
+                <h3>Operating Systems</h3>
                 <p>
-                  Gestión de recursos, concurrencia y sistemas de archivos. Realizamos prácticas
-                  en C.
+                  Resource management, concurrency and file systems. The labs were done in C.
                 </p>
               </article>
               <article class="module">
-                <h3>Bases de Datos</h3>
+                <h3>Databases</h3>
                 <p>
-                  Modelado relacional, SQL y normalización. Fue esencial para entender cómo
-                  gestionar información de forma eficiente.
+                  Relational modelling, SQL and normalization. It was essential to understand how to manage
+                  information efficiently.
                 </p>
               </article>
               <article class="module">
-                <h3>Redes</h3>
+                <h3>Networks</h3>
                 <p>
-                  Protocolos, routing y servicios. Para las prácticas usamos Cisco Packet Tracer.
+                  Protocols, routing and services. We used Cisco Packet Tracer for the labs.
                 </p>
               </article>
               <article class="module">
-                <h3>Concurrencia y Paralelismo</h3>
+                <h3>Concurrency and Parallelism</h3>
                 <p>
-                  Vimos hilos, procesos y problemas clásicos (Filósofos, Productores-Consumidores...). Aplicamos
-                  lo conocido en C y Erlang.
+                  We studied threads, processes and classic problems (Dining Philosophers, Producer-Consumer...).
+                  We applied them in C and Erlang.
                 </p>
               </article>
               <article class="module">
-                <h3>Proceso Software</h3>
+                <h3>Software Process</h3>
                 <p>
-                  Metodologías ágiles y documentación. También hicimos mockups y diagramas UML.
+                  Agile methodologies and documentation. We also made mockups and UML diagrams.
                 </p>
               </article>
               <article class="module">
-                <h3>Sistemas Inteligentes</h3>
+                <h3>Intelligent Systems</h3>
                 <p>
-                  IA clásica, heurísticas y agentes simples. Vi conceptos básicos como búsqueda (Dijkstra, A*...), y
-                   algoritmos genéticos.
+                  Classic AI, heuristics and simple agents. I learned basic concepts such as search (Dijkstra, A*...)
+                  and genetic algorithms.
                 </p>
               </article>
             </div>
           </details>
 
           <details>
-            <summary>&gt; Primer curso</summary>
+            <summary>&gt; First year</summary>
             <div class="accordion__body">
               <article class="module">
-                <h3>Programación I</h3>
+                <h3>Programming I</h3>
                 <p>
-                  Introducción a C y resolución de problemas básicos. Fue mi primer contacto con un lenguaje de programación.
+                  Introduction to C and basic problem solving. It was my first contact with a programming language.
                 </p>
               </article>
               <article class="module">
-                <h3>Informática Básica</h3>
+                <h3>Basic Computing</h3>
                 <p>
-                  Aprendí sobre el ecosistema de Linux, comandos y la navegación básica por terminal. También
-                  interioricé mejor conceptos básicos como binario y permisos.
+                  I learned about the Linux ecosystem, commands and basic terminal navigation. I also better
+                  internalized basic concepts such as binary and permissions.
                 </p>
               </article>
               <article class="module">
-                <h3>Cálculo</h3>
+                <h3>Calculus</h3>
                 <p>
-                  Derivadas, integrales y aplicaciones. Reforcé conceptos matemáticos de bachillerato y aprendí conceptos
-                  más avanzados como series de Fourier.
+                  Derivatives, integrals and applications. I reinforced high-school maths and learned more
+                  advanced concepts such as Fourier series.
                 </p>
               </article>
               <article class="module">
-                <h3>Matemática Discreta</h3>
+                <h3>Discrete Mathematics</h3>
                 <p>
-                  Lógica proposicional, conjuntos y grafos. Fue mi primera toma de contacto con demostraciones formales.
+                  Propositional logic, sets and graphs. It was my first contact with formal proofs.
                 </p>
               </article>
               <article class="module">
-                <h3>Administración y Gestión de Organizaciones</h3>
+                <h3>Business Administration and Management</h3>
                 <p>
-                  Me sirvió para tener un conocimiento básico sobre cómo funcionan las empresas y conceptos 
-                  de economía importantes en mi campo.
+                  It gave me a basic understanding of how companies work and of economic concepts relevant
+                  to my field.
                 </p>
               </article>
               <article class="module">
-                <h3>Tecnología Electrónica</h3>
+                <h3>Electronic Technology</h3>
                 <p>
-                  Repasé conceptos básicos de electrónica como Voltaje, Corriente y Resistencia y también aprendí sobre
-                  circuitos digitales simples y componentes electrónicos.
+                  I reviewed basic electronics such as voltage, current and resistance, and learned about simple
+                  digital circuits and electronic components.
                 </p>
               </article>
               <article class="module">
-                <h3>Programación II</h3>
+                <h3>Programming II</h3>
                 <p>
-                  Profundicé en C y estructuras de datos básicas. Aquí empecé a entender mejor la lógica de programación y
-                  a resolver problemas más complejos con variadas estructuras.
+                  I went deeper into C and basic data structures. This is where I started to better understand
+                  programming logic and to solve more complex problems with different structures.
                 </p>
               </article>
               <article class="module">
-                <h3>Fundamentos de los Computadores</h3>
+                <h3>Computer Fundamentals</h3>
                 <p>
-                  Arquitectura básica, binario y ensamblador simple, resolví ejercicios que me ayudaron a entender cómo
-                  funciona un computador a bajo nivel.
+                  Basic architecture, binary and simple assembly. I solved exercises that helped me understand
+                  how a computer works at a low level.
                 </p>
               </article>
               <article class="module">
-                <h3>Estadística</h3>
+                <h3>Statistics</h3>
                 <p>
-                  Ya tenía conocimientos previos de estadística, pero aquí los reforcé y aprendí conceptos nuevos.
+                  I already had some background in statistics, but here I reinforced it and learned new concepts.
                 </p>
               </article>
               <article class="module">
-                <h3>Álgebra</h3>
+                <h3>Algebra</h3>
                 <p>
-                  Profundicé en temas de álgebra lineal como matrices, determinantes y sistemas de ecuaciones. Esto fue 
-                  básico para entender conceptos futuros en áreas como gráficos por computador y aprendizaje automático.
+                  I went deeper into linear algebra topics such as matrices, determinants and systems of equations.
+                  This was key to understanding later topics in areas like computer graphics and machine learning.
                 </p>
               </article>
             </div>

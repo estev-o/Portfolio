@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Proyectos</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="alternate" hreflang="en" href="https://estev-o.github.io/Portfolio/pages/proyectos.html" />
+    <link rel="alternate" hreflang="es" href="https://estev-o.github.io/Portfolio/es/pages/proyectos.html" />
+    <link rel="alternate" hreflang="x-default" href="https://estev-o.github.io/Portfolio/pages/proyectos.html" />
+  </head>
+  <body class="retro retro--page">
+    <nav class="lang-switch" aria-label="Idioma">
+      <span class="lang-switch__prompt" aria-hidden="true">lang&gt;</span>
+      <a class="lang-switch__opt" href="../../pages/proyectos.html" hreflang="en" lang="en" title="English">EN</a>
+      <a class="lang-switch__opt lang-switch__opt--active" href="proyectos.html" hreflang="es" lang="es" aria-current="page" title="Español">ES</a>
+    </nav>
+    <div class="page">
+      <header class="page-head">
+        <div class="topbar">
+          <a class="logo-button" href="../index.html" aria-label="Volver al inicio">
+<pre class="logo logo--small" aria-label="ASCII personalizado">
+   ___  _____ ______    ___ __ __   ___  
+  /  _]/ ___/|      |  /  _]  |  | /   \ 
+ /  [_(   \_ |      | /  [_|  |  ||     |
+|    _]\__  ||_|  |_||    _]  |  ||  O  |
+|   [_ /  \ |  |  |  |   [_|  :  ||     |
+|     |\    |  |  |  |     |\   / |     |
+|_____| \___|  |__|  |_____| \_/   \___/ 
+          </pre>
+          </a>
+          <nav class="menu menu--stack" aria-label="Navegación principal">
+            <a class="menu__link" href="sobre-mi.html">[Sobre mi]</a>
+            <a class="menu__link" href="experiencia.html">[Experiencia]</a>
+            <a class="menu__link menu__link--active" href="proyectos.html">[Proyectos]</a>
+            <a class="menu__link" href="conocimientos.html">[Conocimientos]</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="page-body">
+        <section class="doc">
+          <h1>Log de proyectos</h1>
+          <p>
+            Aquí presento mis proyectos, igual que en mi
+            <a class="terminal-link" href="https://github.com/estev-o" target="_blank" rel="noopener noreferrer">[GitHub]</a>,
+            pero con un formato más visual y comentado. Los títulos enlazados te llevan
+            al repositorio o al vídeo con más información.
+          </p>
+        </section>
+
+        <section class="post-list" aria-label="Entradas de proyectos">
+          <article class="post">
+            <p class="post__meta">2026 · TFG · Visión por Computador e IA</p>
+            <h2 class="post__title">[Evaluación automática del pastoreo en algas (kelp)]</h2>
+            <p>
+              Mi Trabajo de Fin de Grado: una herramienta para científicos de la UDC que evalúa el
+              daño y determina la procedencia de algas marinas mediante un pipeline de Deep Learning
+              con modelos de detección (YOLO) y clasificación ordinal (CORAL-CNN). Tutelado por
+              <a class="terminal-link" href="https://pdi.udc.es/es/File/Pdi/XS79E" target="_blank" rel="noopener noreferrer">[Manuel González Penedo]</a>
+              (presidente del
+              <a class="terminal-link" href="https://citic.udc.es/" target="_blank" rel="noopener noreferrer">[CITIC]</a>).
+            </p>
+            <p>
+              Presentado como comunicación oral y publicado en el
+              <a class="terminal-link" href="https://xovetic.citic.udc.es/" target="_blank" rel="noopener noreferrer">[IX Congreso XoveTIC]</a>.
+            </p>
+            <ul class="post__tags">
+              <li>Python</li>
+              <li>YOLO</li>
+              <li>CNN</li>
+              <li>PyTorch</li>
+              <li>OpenCV</li>
+            </ul>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">2026 · Competición · 2º puesto</p>
+            <h2 class="post__title">
+              <a class="terminal-link" href="https://github.com/HugoVilr/HACKUD_2026" target="_blank" rel="noopener noreferrer">
+                [HackUDC 2026 · G8keeper]
+              </a>
+            </h2>
+            <p>
+              Gestor de contraseñas como extensión de Chrome, desarrollado en equipo para el reto de
+              seguridad de Gradiant, donde quedamos en <strong>segundo puesto</strong>. Arquitectura
+              zero-knowledge: todo el cifrado ocurre en local con la Web Crypto API (doble AES-256-GCM,
+              PBKDF2/HKDF-SHA-512, HMAC de integridad), con códigos de recuperación, auto-bloqueo y
+              comprobación de contraseñas filtradas mediante k-anonimato.
+            </p>
+            <p>
+              <a class="terminal-link" href="https://devpost.com/software/g8keeper" target="_blank" rel="noopener noreferrer">[Devpost]</a>
+              <a class="terminal-link" href="https://www.linkedin.com/feed/update/urn:li:activity:7435062923980455937/" target="_blank" rel="noopener noreferrer">[Publicación en LinkedIn]</a>
+            </p>
+            <ul class="post__tags">
+              <li>TypeScript</li>
+              <li>Criptografía</li>
+              <li>Chrome Extension</li>
+            </ul>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">Proyecto personal · Homelab</p>
+            <h2 class="post__title">[Servidor personal con Proxmox]</h2>
+            <p>
+              Un MiniPC con Proxmox que uso a diario como servidor personal: media server para mis
+              películas, copia de seguridad de fotos con Immich, domótica con Home Assistant y finanzas
+              con Actual Budget. Cada servicio vive en su propia máquina virtual, y montar el
+              almacenamiento entre varios discos (con backups para no perder las fotos) fue lo más difícil.
+              Conté la experiencia en una
+              <a class="terminal-link" href="https://gpul.org/eventos/2026/proxmox/" target="_blank" rel="noopener noreferrer">[charla en GPUL]</a>.
+            </p>
+            <ul class="post__tags">
+              <li>Proxmox</li>
+              <li>Docker</li>
+              <li>Linux</li>
+              <li>Virtualización</li>
+            </ul>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">2025 · Web personal</p>
+            <h2 class="post__title">
+              <a class="terminal-link" href="https://github.com/estev-o/Portfolio" target="_blank" rel="noopener noreferrer">
+                [Portfolio retro]
+              </a>
+            </h2>
+            <p>
+              Esta web es mi carta de presentación. Está construida únicamente con HTML y CSS,
+              cuidando la estética retro, la accesibilidad y el rendimiento.
+            </p>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">2025 · Hardware casero</p>
+            <h2 class="post__title">
+              <a class="terminal-link" href="https://github.com/estev-o/electric-skateboard-diy" target="_blank" rel="noopener noreferrer">
+                [Proyecto de skate eléctrico casero]
+              </a>
+            </h2>
+            <p>
+              Proyecto personal donde construí un longboard eléctrico sin kits prefabricados:
+              investigación, selección de componentes, montaje, cableado y pruebas finales en
+              calle. El resultado es un skate estable y listo para trayectos cortos.
+            </p>
+            <div class="post__media">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/h1pzZBqLyHg?start=0"
+                  title="Skate eléctrico casero"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">2025 · Inteligencia Artificial</p>
+            <h2 class="post__title">
+              <a class="terminal-link" href="https://github.com/estev-o/AA-Practica2" target="_blank" rel="noopener noreferrer">
+                [Trabajo de Aprendizaje Automático]
+              </a>
+            </h2>
+            <p>
+              Proyecto en Julia aplicando algoritmos de Inteligencia Artificial (Deep Learning,
+              DOME, ANN, etc.) para reconocer fenómenos atmosféricos. Incluye experimentos,
+              validaciones y comparación de métricas.
+            </p>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">2025 · Competición</p>
+            <h2 class="post__title">
+              <a class="terminal-link" href="https://github.com/HugoVilr/HackUDC-Devs-Inc" target="_blank" rel="noopener noreferrer">
+                [HackUDC 2025]
+              </a>
+            </h2>
+            <p>
+              Aplicación móvil creada con mi equipo para HackUDC. Permite filtrar talento dentro
+              de una empresa según especialidades y conocimientos, e integra una IA especializada
+              para responder dudas y resolver incidencias internas.
+            </p>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">Carrera · Videojuegos</p>
+            <h2 class="post__title">[Videojuegos en Pygame y Unity]</h2>
+            <p>
+              En la asignatura de Entornos Inmersivos, Interactivos y de Entretenimiento desarrollé dos
+              juegos en un equipo de cinco personas. El primero, un roguelike 2D en pixel art hecho con
+              Pygame, con enemigos de distintos comportamientos, tienda de habilidades persistentes, un NPC
+              y un jefe final. El segundo, un boomer-shooter 3D por oleadas en Unity, donde programé el
+              jefe final (patrones de ataque, animaciones y fases) y el movimiento del jugador, inspirado
+              en Quake II y Unreal Tournament, que premia el bunny-hop y el control aéreo.
+            </p>
+            <ul class="post__tags">
+              <li>Unity</li>
+              <li>C#</li>
+              <li>Pygame</li>
+            </ul>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">Carrera · Animación 3D</p>
+            <h2 class="post__title">
+              <a class="terminal-link" href="https://www.youtube.com/watch?v=nejR07oNbcs" target="_blank" rel="noopener noreferrer">
+                [Animación en Blender]
+              </a>
+            </h2>
+            <p>
+              Proyecto final de la parte de Blender de Computación Gráfica y Visualización: modelé y animé desde cero un
+              pingüino cocinando, con iluminación y cambios de cámara.
+            </p>
+            <div class="post__media">
+              <div class="video-wrapper">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/nejR07oNbcs"
+                  title="Animación de un pingüino cocinando en Blender"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </article>
+
+          <article class="post">
+            <p class="post__meta">2024-2025 · Documentación</p>
+            <h2 class="post__title">
+              <a class="terminal-link" href="https://github.com/estev-o/Apuntes_Obsidian" target="_blank" rel="noopener noreferrer">
+                [Mis apuntes de la Universidad]
+              </a>
+            </h2>
+            <p>
+              Apuntes en Markdown tomados en Obsidian a lo largo de la mención de Computación.
+              Incluyen resúmenes, ejercicios y glosarios que actualizo tras cada clase.
+            </p>
+            <div class="post__media">
+              <img src="../../assets/images/Mis_apuntes.png" alt="Captura de los apuntes en Obsidian" />
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

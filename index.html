@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Inicio</title>
+    <title>Portfolio | Home</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="alternate" hreflang="en" href="https://estev-o.github.io/Portfolio/index.html" />
+    <link rel="alternate" hreflang="es" href="https://estev-o.github.io/Portfolio/es/index.html" />
+    <link rel="alternate" hreflang="x-default" href="https://estev-o.github.io/Portfolio/index.html" />
   </head>
   <body class="retro retro--home">
+    <nav class="lang-switch" aria-label="Language">
+      <span class="lang-switch__prompt" aria-hidden="true">lang&gt;</span>
+      <a class="lang-switch__opt lang-switch__opt--active" href="index.html" hreflang="en" lang="en" aria-current="page" title="English">EN</a>
+      <a class="lang-switch__opt" href="es/index.html" hreflang="es" lang="es" title="Español">ES</a>
+    </nav>
     <main class="crt" aria-labelledby="logo">
       <section class="crt__screen">
         <pre id="logo" class="logo logo--center" aria-label="ESTEVO">
@@ -21,12 +29,12 @@
   ██████████  ▄████████▀     ▄████▀     ██████████  ▀██████▀   ▀██████▀  
                                                                          
         </pre>
-        <p class="subtitle">> Graduado en Ingeniería Informática · Estudiante del Máster en Visión por Computador</p>
-          <nav class="menu menu--center" aria-label="Navegación principal">
-            <a class="menu__link" href="pages/sobre-mi.html">[Sobre mi]</a>
-            <a class="menu__link" href="pages/experiencia.html">[Experiencia]</a>
-            <a class="menu__link" href="pages/proyectos.html">[Proyectos]</a>
-            <a class="menu__link" href="pages/conocimientos.html">[Conocimientos]</a>
+        <p class="subtitle">> Computer Engineering graduate · Computer Vision Master's student</p>
+          <nav class="menu menu--center" aria-label="Main navigation">
+            <a class="menu__link" href="pages/sobre-mi.html">[About me]</a>
+            <a class="menu__link" href="pages/experiencia.html">[Experience]</a>
+            <a class="menu__link" href="pages/proyectos.html">[Projects]</a>
+            <a class="menu__link" href="pages/conocimientos.html">[Knowledge]</a>
           </nav>
       </section>
     </main>

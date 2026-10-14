@@ -159,6 +159,72 @@ body {
   text-decoration: underline;
 }
 
+.lang-switch {
+  position: fixed;
+  top: clamp(0.75rem, 2vw, 1.5rem);
+  right: clamp(0.75rem, 2vw, 1.5rem);
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: rgba(3, 6, 3, 0.85);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 14px rgba(154, 248, 157, 0.12);
+  font-size: 0.85rem;
+}
+
+.lang-switch::after {
+  content: '\258C';
+  color: var(--accent);
+  animation: caret-blink 1.1s steps(1) infinite;
+}
+
+.lang-switch__prompt {
+  color: var(--muted);
+  margin-right: 0.2rem;
+}
+
+.lang-switch__opt {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  padding: 0.1rem 0.45rem;
+  border-radius: 3px;
+  transition: color 120ms ease, background 120ms ease, box-shadow 120ms ease;
+}
+
+.lang-switch__opt:hover,
+.lang-switch__opt:focus-visible {
+  color: var(--accent-strong);
+  background: rgba(154, 248, 157, 0.12);
+  outline: none;
+  text-shadow: 0 0 6px rgba(154, 248, 157, 0.6);
+}
+
+.lang-switch__opt--active,
+.lang-switch__opt--active:hover,
+.lang-switch__opt--active:focus-visible {
+  color: var(--bg);
+  background: var(--accent);
+  text-shadow: none;
+  box-shadow: 0 0 10px rgba(154, 248, 157, 0.55);
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lang-switch::after {
+    animation: none;
+  }
+}
+
 .page {
   width: 100%;
   margin: 0;
@@ -262,8 +328,9 @@ body {
 
 .video-wrapper {
   position: relative;
-  width: min(420px, 100%);
-  height: 237px;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
   border-radius: 0.75rem;
   overflow: hidden;
   margin: 0 auto;
